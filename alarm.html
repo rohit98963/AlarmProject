@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alarmclock</title>
+    <link rel="stylesheet" href="alarm.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+ 
+      <!-- Display the current time in HH:MM:SS AM/PM format -->
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <div class="column">
+          <!-- Select dropdown for Hour -->
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <!-- Select dropdown for Minute -->
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <!-- Select dropdown for AM/PM -->
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <!-- Button to set the alarm -->
+      <button>Set Alarm</button>
+    </div>
+    <!-- External JavaScript file to handle the alarm functionality -->
+    <script src="alarm.js"></script>
+  </body>
+</html>

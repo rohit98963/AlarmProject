@@ -1,0 +1,84 @@
+/* Center elements both horizontally and vertically in the body, wrapper, and content sections */
+body,
+.wrapper,
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set padding for the body, add a minimum height, and set the background color */
+body {
+  padding: 0 10px;
+  min-height: 110vh;
+  background: hsla(314, 82%, 13%, 0.981);
+}
+
+/* Set the width, padding, background color, border radius, box shadow, and flex direction for the wrapper section */
+.wrapper{
+  width: 440px;
+  padding: 30px 30px 38px;
+  background: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Style the h1 element within the wrapper section */
+.wrapper h1{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+/* Set the width and justify content for the content section within the wrapper section */
+.wrapper .content{
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Add the disable class to the content section to set the cursor style and opacity */
+.content.disable{
+  cursor: no-drop;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Style the column elements within the content section */
+.content .column{
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: calc(100% / 3 - 5px);
+  font:bold;
+}
+
+/* Add the disable class to the column elements to set the opacity and disable pointer events */
+.content.disable .column{
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Style the select elements within the column elements */
+.column select{
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+}
+
+/* Style the button element within the wrapper section */
+.wrapper button{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #a51919;
+}
